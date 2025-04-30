@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="javascript" href="./script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -25,36 +24,39 @@
         </label>
         <label>
             Converter <b>de</b>
-            <select>
-                <option>U$ Dólar mericano</option>
-                <option>€ Euro</option>
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar americano</option>
+                <option value="euro">€ Euro</option>
             </select>
         </label>
         <label>
             <b>Valor</b>
-                <input placeholder="R$ 0,00">
+                <input class="input-currency" placeholder="R$ 0,00">
         </label>
-        <button>Converter</button>
+
+        <button class="convert-button">Converter</button>
+
         <section>
 
             <div class="box">
-                <img src="./assest/real.png" alt="moeda-a-converter" class="moeda-img">
+                <img src="./assest/real.png" alt="moeda-a-converter" class="moeda-img1">
                 <p class="moeda">Real</p>
-                <p class="valor">R$ 0,00</p>
+                <p class="valor-converter">R$ 0,00</p>
             </div>
 
             <img src="./assest/seta.png" alt="seta" class="arrow">
 
             <div class="box">
-                <img src="./assest/dolar.png" alt="moeda-convertida" class="moeda-img">
-                <p class="moeda">Dólar americano</p>
-                <p class="valor">US$ 0,00</p>
+                <img src="./assest/dolar.png" alt="moeda-convertida" class="moeda-img2">
+                <p class="moeda" id="currency-name">Dólar americano</p>
+                <p class="valor">US$ 0.00</p>
             </div>
 
         </section>
 
 
     </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
